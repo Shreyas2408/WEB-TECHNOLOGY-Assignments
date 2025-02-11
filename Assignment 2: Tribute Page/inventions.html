@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikola Tesla's Inventions</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .inventions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .invention-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .invention-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="inventions.html" class="active">Inventions</a></li>
+                <li><a href="legacy.html">Legacy</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Nikola Tesla's Inventions</h1>
+        <div class="inventions-grid">
+            <div class="invention-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Tesla_Broadcast_Tower_1904.jpeg" alt="Tesla Coil">
+                <h2>Tesla Coil</h2>
+                <p>A high-voltage electrical transformer circuit used to produce high-voltage, low-current, high-frequency alternating-current electricity.</p>
+            </div>
+            <div class="invention-card">
+                <img src="one ac.jpg" alt="Alternating Current">
+                <h2>Alternating Current (AC) System</h2>
+                <p>Tesla's most famous invention, the AC electrical system, powers homes and buildings today.</p>
+            </div>
+            <div class="invention-card">
+                <img src="inductionmotor1.jpg" alt="Induction Motor">
+                <h2>Induction Motor</h2>
+                <p>An AC electric motor that revolutionized the manufacturing and transportation industries.</p>
+            </div>
+            <div class="invention-card">
+                <img src="teslaturbine.png" alt="Tesla Turbine">
+                <h2>Tesla Turbine</h2>
+                <p>A bladeless centripetal flow turbine patented by Tesla in 1913.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nikola Tesla Tribute.</p>
+    </footer>
+</body>
+</html>
+

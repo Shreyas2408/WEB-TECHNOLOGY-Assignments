@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikola Tesla Biography</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        /* the line set karala */
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--secondary-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        /* timeline ani line set karala aniccircle adjust */
+        .timeline-item {       
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: calc(45% - 45px);
+        }
+        /* circle on line ani box size */
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -15px;
+            background-color: white;
+            border: 4px solid var(--secondary-color);
+            top: 55px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+        }
+        .right::after {
+            left: -16px;
+        }
+        .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .intro img {
+            max-width: 300px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width: 600px) {
+            .timeline::after {
+                left: 31px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .timeline-item::after {
+                left: 15px;
+            }
+            .left::after, .right::after {
+                left: 15px;
+            }
+            .right {
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biography.html" class="active">Biography</a></li>
+                <li><a href="inventions.html">Inventions</a></li>
+                <li><a href="legacy.html">Legacy</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>The Life of Nikola Tesla</h1>
+        
+        <section class="intro">
+            <img src="Tesla_circa_1890.jpeg" alt="Nikola Tesla Portrait">
+            <p>Nikola Tesla (1856-1943) was a Serbian-American inventor, electrical engineer, mechanical engineer, and futurist best known for his contributions to the design of the modern alternating current (AC) electricity supply system.</p>
+        </section>
+
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="content">
+                    <h2>1856</h2>
+                    <img src="birthplace.jpg" alt="Tesla's Birthplace">
+                    <p>Nikola Tesla is born on July 10 in Smiljan, Austrian Empire (modern-day Croatia). He was born during a lightning storm, which his family saw as a bad omen.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content">
+                    <h2>1875</h2>
+                    <p>Tesla begins his studies at the Austrian Polytechnic in Graz, where he excels in his first year. He develops an interest in electricity and magnetism.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="content">
+                    <h2>1884</h2>
+                    <img src="tesla_edison.webp" alt="Tesla and Edison">
+                    <p>Tesla moves to the United States and begins working for Thomas Edison. Their relationship soon sours due to differences in approach and Edison's alleged refusal to pay Tesla for his work.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content">
+                    <h2>1887-1888</h2>
+                    <p>Tesla files his first patents related to his polyphase alternating current system. He gives a lecture on his AC system to the American Institute of Electrical Engineers, gaining significant attention.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="content">
+                    <h2>1891</h2>
+                    <img src="onlyman.jpg" alt="Tesla Coil">
+                    <p>Tesla invents the Tesla Coil, a high-voltage transformer circuit used to produce high-voltage, low-current, high-frequency alternating-current electricity.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content">
+                    <h2>1893</h2>
+                    <p>Tesla demonstrates wireless lighting and the transmission of electric power by electromagnetic fields at the World's Columbian Exposition in Chicago.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="content">
+                    <h2>1943</h2>
+                    <p>Nikola Tesla passes away on January 7 in New York City at the age of 86. His contributions to science and technology were vast, but many of his ideas remained unrealized during his lifetime.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nikola Tesla Tribute. Created for educational purposes.</p>
+    </footer>
+</body>
+</html>
+

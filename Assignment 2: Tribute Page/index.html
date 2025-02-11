@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikola Tesla Tribute</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    .hero {
+        background-image: url('Tesla_circa_1890.jpeg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: flex-end; /* Changed from center to flex-end to move content to bottom */
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+    .hero-content {
+        background-color: rgba(19, 19, 19, 0.5); 
+        width: 100%; /* Make the content span full width */
+        padding: 20px; /* Add some padding */
+        margin-bottom: 40px; /* Add some space from the bottom */
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 4px rgba(3, 3, 3, 0.5);
+        margin: 0; /* remove the default margin */
+    }
+    @media (max-width: 768px) {
+        .hero h1 {
+            font-size: 2rem;
+        }
+        .hero-content {
+            margin-bottom: 20px; /* less bottom margin on mobile */
+        }
+    }
+</style>
+    
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="inventions.html">Inventions</a></li>
+                <li><a href="legacy.html">Legacy</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Nikola Tesla: The Man Who Lit Up The World</h1>
+            </div>
+        </section>
+    
+        <section class="content">
+            <h2>Welcome to the Nikola Tesla Tribute</h2>
+            <p>Explore the life and works of one of history's most brilliant and enigmatic inventors. Nikola Tesla's contributions to science and technology continue to shape our world today.</p>
+            <a href="biography.html" class="cta-button">Discover Tesla's Story</a>
+        </section>
+    </main>
+    
+    
+
+    <footer>
+        <p>&copy; 2025 Nikola Tesla Tribute.</p>
+    </footer>
+</body>
+</html>
+
